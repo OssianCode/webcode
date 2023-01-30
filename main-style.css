@@ -1,0 +1,102 @@
+/* Top navigation bar*/
+.top-navigation {
+  background-color: rgb(50, 95, 179);
+  width: 71%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+} 
+
+/* Top navigation links */
+.top-navigation a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px;
+  font-size: large;
+}
+
+/* Top navigation hover */
+.top-navigation a:hover {
+  background-color: rgb(226, 226, 226);
+  color: rgb(39, 22, 117);
+}
+
+/* Top navigation active */
+.top-navigation a.active {
+  background-color: rgb(210, 222, 255);
+  color: rgb(39, 22, 117);
+}
+
+/* old navigation */
+/*table.headerlinks {
+  border: solid 2px ;
+  border-collapse: collapse;
+  border-color: rgb(180, 201, 207);
+  background-color: rgb(187, 255, 255);
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+/*header section*/
+div.mainbox {
+  border: solid;
+  border-width: 5px;
+  border-color: rgb(180, 41, 214);
+  padding: 5%;
+  width: 60%;
+  background-color: rgb(213, 226, 236);
+ /* margin-bottom: 10px; */
+  margin-left: auto;
+  margin-right: auto;
+}  
+
+/*body section*/
+div.bodybox {
+  border: solid;
+  border-width: 5px;
+  border-color: lightblue;
+  padding: 5%;
+  width: 60%;
+  background-color: rgb(239, 248, 248);
+  margin-left: auto;
+  margin-right: auto;
+}  
+
+/*style table, table header and table cell */
+table, th, td {
+  border: solid 2px ;
+  border-collapse: collapse;
+  border-color: rgb(180, 201, 207);
+  padding: 5px;
+}
+
+/* style table header cell*/
+th {
+  background-color: rgb(180, 201, 207);}
+
+/* body text color */
+h1        {color: rgb(143, 31, 207);}
+body      {color: rgb(69, 69, 173);}
+a         {color: rgb(97, 97, 240);}  
+a:hover   {color: rgb(199, 97, 240);}  
+
+/*id*/
+#second { color: rgb(63, 224, 184);}
+
+/*classes*/
+.fonts  { font-family:'Courier New', Courier, monospace;}
+
+/* form section*/
+#form {
+  border: none;
+  padding: 2px;
+}
+
+
+

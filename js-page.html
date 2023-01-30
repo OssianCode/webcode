@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main-style.css">
+        <title>Javascript studies</title>
+    </head>
+    <body class="fonts">
+        <!-- new navigation block-->   
+        <div class="top-navigation">
+            <a href="index.html">Start</a>
+            <a href="games.html">Games</a>
+            <a class="active" href="js-page.html">Cooking inspiration</a>
+        </div> 
+
+        <!-- Old navigation -->
+        <!--
+        <table class="headerlinks">
+
+            <tr>
+                <td>
+                    <a href="index.html">Start</a>
+                </td>
+                <td>
+                    <a href="pelisivu.html">Games
+                    </a>
+                </td>
+                <td>
+                    <a href="tehtava3javascript.html">
+                    Javascript
+                    </a>
+                </td>
+            </tr>
+        </table> 
+        -->   
+
+        <div class="mainbox">
+            <h1>Javascript lesson at uni/vamk</h1>
+            <p>20.1.2023</p>
+        </div>
+
+        <!--How to write javascript directly in html-page-->
+        <!--<script>
+            alert('Hello world!');
+            alert(898989);
+        </script>-->
+
+
+        <div class="bodybox">
+
+            <h2>What to cook today?</h2>
+            <p id="meny"></p>
+
+            <br><br>
+
+            <button type="button"
+            onclick="getNextDish()">
+            Show tomorrow's meny</button>
+            <p id="menyOptional"></p>
+
+            <br><br>
+
+
+            <button type="button"
+            onclick="document.getElementById('demo').innerHTML = Date()">
+            Click to display Date and Time</button>
+            <p id="demo"></p>
+
+            <br><br>
+
+        </div>
+
+        <script src="js-ex1.js"></script>
+
+
+    </body>
+</html>
