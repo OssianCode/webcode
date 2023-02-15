@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main-style.css">
+    <title>Ex. 6</title>
+</head>
+<body class="fonts">
+    
+        <!-- new navigation block-->   
+        <div class="top-navigation">
+            <a href="index.html">Start</a>
+            <a href="games.html">Games</a>
+            <a href="js-page.html">Cooking inspiration</a>
+            <a href="javasc-page5.html">Ex. 5</a>
+            <a class="active" href="javasc-page6.html">Ex. 6</a>
+        </div> 
+
+        <!--header-->
+        <div class="mainbox2">
+            <h1 id="heading1">Excersises 6</h1>       
+        </div>
+        
+        <!-- Box for excersises-->
+        <div class="bodybox2">
+            <h1>Event practise</h1>
+
+            <!--Listener in javascript-file -->
+            <input type="button" value="Change header" id="changeHeader"><br><br>
+            <!--Listener at html-file - calls the function from html-->
+            <input type="button" value="Other Button to change header" id="otherButton" onclick="changeHeader()">
+            <br><br>
+
+            <label for="diam">Diameter:</label><br>
+            <input type="text" id="diam">
+            <input type="button" value="Calculate area" id="calcArea">
+            <p id="bodyArea1"></p>
+
+            <p id="bodyEve1"></p>
+            <!-- 
+            <p id="bodyEve2"></p>
+            <p id="bodyEve3"></p>
+            <p id="bodyEve4"></p>
+            <p id="bodyEve5"></p>
+             -->
+
+        </div>
+
+        <script src="js-ex6.js"></script> 
+
+
+</body>
+</html>
