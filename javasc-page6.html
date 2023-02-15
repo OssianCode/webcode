@@ -21,8 +21,28 @@
         <!--header-->
         <div class="mainbox2">
             <h1 id="heading1">Excersises 6</h1>       
+            <h2 id="hideHeader">Show paragraph on mouse over</h2> 
+            <h3 id="dateField"></h3>  
         </div>
         
+        <!--BackgroundColor-->
+        <div class="backColour">
+
+            <!--<p>Change<br><br>background<br><br>colour</p>-->
+
+            <label for="myColour">Change background colour:</label><br>
+            <input type="color" id="myColour">
+        </div>
+
+        <!-- Hidden box-->
+        <div class="bodybox2" id="hiddenDiv">
+            <p>
+                Hide on mouse over
+            </p>
+        </div>
+
+
+
         <!-- Box for excersises-->
         <div class="bodybox2">
             <h1>Event practise</h1>
@@ -32,6 +52,8 @@
             <!--Listener at html-file - calls the function from html-->
             <input type="button" value="Other Button to change header" id="otherButton" onclick="changeHeader()">
             <br><br>
+
+            <input type="button" value="Show current date" id="showDate"><br><br>
 
             <label for="diam">Diameter:</label><br>
             <input type="text" id="diam">

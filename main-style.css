@@ -88,12 +88,24 @@ div.bodybox2 {
   border: solid;
   border-width: 5px;
   border-color: rgb(10, 143, 153);
-  padding: 5%;
-  width: 60%;
+  padding: 2%;
+  width: 66%;
   background-color: rgb(221, 255, 248);
   margin-left: auto;
   margin-right: auto;
 }  
+
+/*header section*/
+div.backColour {
+  position: absolute;
+  left: 5px;
+  top: 10%;
+  width: 100px;
+  border: solid cyan 1px;
+  background-color: aliceblue;
+
+}  
+
 
 /*style table, table header and table cell */
 table, th, td {

@@ -19,9 +19,97 @@ function changeHeader(){
     
 }
 
+
+/*Show current Date*/
+function thisDay(){
+
+    /*Get element heading1 from document */
+    const myElem = document.getElementById('dateField');
+    let cont = myElem.innerHTML;
+    console.log(myElem);
+    console.log(cont);
+
+    let thisDay = new Date();
+
+    cont = thisDay;
+    myElem.innerHTML = cont;
+    console.log(cont);
+    
+}
+
+/*Show hidden paragraph */
+function showParagraph(){
+
+    /*Get element hiddenDiv */
+    /*const myElem = document.getElementById('hiddenDiv');
+    let cont = myElem.innerHTML;
+    console.log(myElem);
+    console.log(cont);
+
+    myElem.style.visibility = 'visible';*/
+
+    setVisibility("visible");
+
+}
+
+/*Hide paragraph */
+function hideParagraph(){
+
+    /*Get element hiddenDiv */
+    /*const myElem = document.getElementById('hiddenDiv');
+    let cont = myElem.innerHTML;
+    console.log(myElem);
+    console.log(cont);
+
+    myElem.style.visibility = 'hidden';*/
+
+    setVisibility("hidden");
+
+}
+
+
+/*Set visibility to div */
+function setVisibility(visibility){
+
+    /*Get element hiddenDiv */
+    const myElem = document.getElementById('hiddenDiv');
+    console.log("Set Visibility: " + visibility);
+    myElem.style.visibility = visibility;
+}
+
+
+/*Change background colour */
+function changeColour(){
+
+    /*Get element hiddenDiv */
+    const myElem = document.getElementById('myColour');
+    const chosenColour = myElem.value;
+    console.log("Chosen colour " + chosenColour);
+    document.body.style.backgroundColor = chosenColour;
+
+}
 /*Listener for changeHeader-button */
 const myButton = document.getElementById('changeHeader');
 myButton.addEventListener('click', changeHeader);
+
+/*Listener for showDate-button */
+const myDateButton = document.getElementById('showDate');
+myDateButton.addEventListener('click', thisDay);
+
+/*Listener for hiddeHeader-heading */
+const myHideHeader = document.getElementById('hideHeader');
+myHideHeader.addEventListener('mouseover', showParagraph);
+//myHideHeader.addEventListener('mouseover', setVisibility("visible"));
+
+/*Listener for hiddeHeader-heading */
+const myHideDiv = document.getElementById('hiddenDiv');
+myHideDiv.addEventListener('mouseover', hideParagraph);
+//myHideDiv.addEventListener('mouseover', setVisibility("hidden"));
+
+/*Listener for change Colour */
+const myColourChange = document.getElementById('myColour');
+myColourChange.addEventListener('focusout', changeColour);
+
 
 // Calculates area of a circle by input diabeter, returns area
 function calculateAreaOfCircle(diameter){
@@ -50,6 +138,7 @@ function getInput(){
     resElem.innerHTML = `Area of circle is: ${result}`; /* shift ´ = `*/
 
 }
+
 
 // Listener for calculate area-button
 const myAreaButton = document.getElementById('calcArea');
