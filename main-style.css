@@ -43,6 +43,10 @@
   margin-right: auto;
 }*/
 
+div {
+  margin-bottom: 2px;
+}
+
 /*header section*/
 div.mainbox {
   border: solid;
@@ -88,13 +92,37 @@ div.bodybox2 {
   border: solid;
   border-width: 5px;
   border-color: rgb(10, 143, 153);
-  padding: 2%;
-  width: 66%;
+  padding: 5%;
+  width: 60%;
   background-color: rgb(221, 255, 248);
   margin-left: auto;
   margin-right: auto;
 }  
+/*alternative mainbox*/
+div.mainbox3 {
+  border: solid;
+  border-width: 5px;
+  border-color: rgb(226, 115, 11);
+  padding: 5%;
+  width: 60%;
+  background-color: rgb(255, 252, 210);
+ /* margin-bottom: 10px; */
+  margin-left: auto;
+  margin-right: auto;
+}  
 
+
+/*alternative body section*/
+div.bodybox3 {
+  border: solid;
+  border-width: 5px;
+  border-color: rgb(165, 17, 49);
+  padding: 5%;
+  width: 60%;
+  background-color: rgb(255, 224, 199);
+  margin-left: auto;
+  margin-right: auto;
+}  
 /*header section*/
 div.backColour {
   position: absolute;
@@ -121,12 +149,14 @@ th {
 
 /* body text color */
 h1        {color: rgb(143, 31, 207);}
+h2        {color: rgb(49, 105, 93);}
 body      {color: rgb(69, 69, 173);}
 a         {color: rgb(97, 97, 240);}  
 a:hover   {color: rgb(199, 97, 240);}  
 
 /*id*/
 #second { color: rgb(63, 224, 184);}
+#hiddenDiv {visibility: hidden;}
 
 /*classes*/
 .fonts  { font-family:'Courier New', Courier, monospace;}

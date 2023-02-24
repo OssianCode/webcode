@@ -1,5 +1,6 @@
 console.log("js6");
 console.log(Document);
+let textValues;
 
 
 /*Change heading1 text and colour*/
@@ -88,6 +89,8 @@ function changeColour(){
     document.body.style.backgroundColor = chosenColour;
 
 }
+
+
 /*Listener for changeHeader-button */
 const myButton = document.getElementById('changeHeader');
 myButton.addEventListener('click', changeHeader);
@@ -111,7 +114,7 @@ const myColourChange = document.getElementById('myColour');
 myColourChange.addEventListener('focusout', changeColour);
 
 
-// Calculates area of a circle by input diabeter, returns area
+
 function calculateAreaOfCircle(diameter){
 
     let area = (diameter/ 2)**2 * Math.PI; /* area = pi*r^2 */
@@ -125,7 +128,6 @@ function calculateAreaOfCircle(diameter){
 
 calculateAreaOfCircle(3);
 
-// Finds user input and calls calculateAreaOfCircle
 function getInput(){
 
     const textField1 = document.getElementById('diam');
@@ -140,41 +142,67 @@ function getInput(){
 }
 
 
-// Listener for calculate area-button
+function changeImage(){
+    const imgNbr = document.getElementById('pics');
+    const selection = imgNbr.value;
+
+    console.log(selection);
+
+    const myElem = document.getElementById('selectedPic');
+    let cont = myElem.innerHTML;
+    console.log(selection);
+    console.log("my elem: " + cont);
+
+    myElem.src = selection;
+
+
+
+}
+
+
 const myAreaButton = document.getElementById('calcArea');
 myAreaButton.addEventListener('click', getInput);
 
+const myList = document.getElementById('pics');
+myList.addEventListener('change', changeImage);
+
+    // Add values to one variable, then print all
+    textValues = "Start: " + "hello!";
+    textValues += "<br><br>" + "Area: diameter = " + "5: " + calculateAreaOfCircle(5) ; 
+    
+    function countLetters(a){
+        let count = a.length;
+        return count;
+    }
+
+    countLetters('hello world');
+
+    console.log(countLetters('Hello world'));
 
 
-// Add values to one variable, then print all
-textValues = "Start: " + "hello!";
-textValues += "<br><br>" + "Area: diameter = " + "5: " + calculateAreaOfCircle(5) ; 
+    textValues += "<br><br>" + "Hello world letter count = " + countLetters('hello world');
+    /*textValues += "<br><br>" + "Sum values: 1 + 2 = " + sumValues(); 
+    textValues += "<br><br>" + "Triangle Area 4 by 6 = " + calculateTriangleArea(4, 6);
+    textValues += "<br><br>" + "Number 10 divided by 2 is " + divideWithTwo(10);
+    textValues += "<br><br>" + "Number 20 divided by 2 is " + divideWithTwo(20);
+    textValues += "<br><br>" + "Number 15 divided by 2 is " + divideWithTwo(15);
+    textValues += "<br><br>" + "Puppy Age 1.5 in human years is " + calculateDogAge(1.5);*/
+
+    /*addToList("first");
+    addToList("second");
+    addToList("third");*/
 
 
+    /*textValues += "<br><br>" + "Array[0] = " +  myList[0];
+    textValues += "<br><br>" + "Array[1] = " +  myList[1];
+    textValues += "<br><br>" + "Array[2] = " +  myList[2];
+    textValues += "<br><br>" + "";
+    textValues += "<br><br>" + "";
+    textValues += "<br><br>" + "";
+    textValues += "<br><br>" + "";
+    textValues += "<br><br>" + "";
+    textValues += "<br><br>" + "";
+    textValues += "<br><br>" + "";*/
 
-/*textValues += "<br><br>" + "Sum values: 2 + 5 = " + sumTwoValues(2, 5);
-textValues += "<br><br>" + "Sum values: 1 + 2 = " + sumValues(); 
-textValues += "<br><br>" + "Triangle Area 4 by 6 = " + calculateTriangleArea(4, 6);
-textValues += "<br><br>" + "Number 10 divided by 2 is " + divideWithTwo(10);
-textValues += "<br><br>" + "Number 20 divided by 2 is " + divideWithTwo(20);
-textValues += "<br><br>" + "Number 15 divided by 2 is " + divideWithTwo(15);
-textValues += "<br><br>" + "Puppy Age 1.5 in human years is " + calculateDogAge(1.5);*/
-
-/*addToList("first");
-addToList("second");
-addToList("third");*/
-
-
-/*textValues += "<br><br>" + "Array[0] = " +  myList[0];
-textValues += "<br><br>" + "Array[1] = " +  myList[1];
-textValues += "<br><br>" + "Array[2] = " +  myList[2];
-textValues += "<br><br>" + "";
-textValues += "<br><br>" + "";
-textValues += "<br><br>" + "";
-textValues += "<br><br>" + "";
-textValues += "<br><br>" + "";
-textValues += "<br><br>" + "";
-textValues += "<br><br>" + "";*/
-
-// print all collected text
-document.getElementById("bodyEve1").innerHTML = textValues;
+    // print all collected text
+    document.getElementById("bodyEve1").innerHTML = textValues;

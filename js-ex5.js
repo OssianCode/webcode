@@ -2,11 +2,11 @@ console.log("js5");
 
 let thisDay = new Date();
 let counter = 0;
+let clicksCount = 0;
 let textValues;
 let myList = [];    
 console.log(thisDay);
 
-//Sums 1 + 2 together, logs calculation and returns sum
 function sumValues() {
     let sum = 1 + 2;
     console.log("1 + 2 = " + sum);
@@ -14,10 +14,8 @@ function sumValues() {
     return sum;
 };
 
-//Run sumValues function
 sumValues();
 
-//Sums input values a + b together, logs calculation and returns sum
 function sumTwoValues(a, b) {
     let sum = a + b;
     console.log(a + " + " + b + " = " + sum);
@@ -25,10 +23,8 @@ function sumTwoValues(a, b) {
 
 };
 
-//Sum 2 and 5 together
 sumTwoValues(2, 5);
 
-//Basic counter, returns and logs value 
 function increaseCounter() {
 
     counter ++;
@@ -42,7 +38,6 @@ increaseCounter();
 increaseCounter();
 increaseCounter();
 
-// Calculate area of a triangle, logs calculation and returns Area
 function calculateTriangleArea(triangleHeight, triangleWidth) {
     let triangleArea = triangleHeight * triangleWidth / 2.
     console.log("Triangle Area " + triangleHeight + " by " + triangleWidth + " = " + triangleArea);
@@ -50,7 +45,6 @@ function calculateTriangleArea(triangleHeight, triangleWidth) {
 
 };
 
-// Divides input number by two, logs calculation and returns division
 function divideWithTwo(userNumber) {
     let division = userNumber / 2.
     console.log("Number " + userNumber + " divided by 2 is " + division);
@@ -58,14 +52,12 @@ function divideWithTwo(userNumber) {
 
 };
 
-// Calculates puppy age by multiplying input number by 7, logs calculation and returns dogAge
 function calculateDogAge(puppyAge){
     let dogAge = puppyAge * 7;
     console.log("Puppy Age " + puppyAge + " in human years is " + dogAge);
     return dogAge;
 };
 
-// Pushes input txt to list
 function addToList(txt){
 
     myList.push(txt);
@@ -74,6 +66,26 @@ function addToList(txt){
 
 };
 
+
+function countClicks() {
+
+    clicksCount ++;
+    console.log("Clicks: " + clicksCount);
+
+    const myElem = document.getElementById('conterH1');
+    let cont = myElem.innerHTML;
+    console.log("my elem: " + cont);
+
+    myElem.innerHTML = "Button clicked " + clicksCount + " times";
+
+    return clicksCount;
+
+
+}
+
+
+const myClickButton = document.getElementById('countClick');
+myClickButton.addEventListener('click', countClicks);
 
 
     // Add values to one variable, then print all
